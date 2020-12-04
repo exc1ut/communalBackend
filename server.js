@@ -5,7 +5,7 @@ const userController = require("./controller/User");
 
 const app = express();
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
